@@ -1,0 +1,7 @@
+<h1>Cocktail list</h1>
+ <% @cocktails.each do |cocktail| %>
+ <li><%= cocktail.name %></li>
+<li class="list-group-item list-group-item-primary"><%= render 'drink', cocktail: cocktail %></li>
+<% end %>
+<%= link_to 'create cocktail', new_cocktail_path %>
+

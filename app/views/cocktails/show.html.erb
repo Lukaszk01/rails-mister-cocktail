@@ -1,0 +1,25 @@
+
+<h1><%= @cocktail.name %></h1>
+
+<h2>Ingredients: </h2>
+
+
+<% @cocktail.ingredients.each do |ingredient| %>
+<%= ingredient.name %>
+  <% ingredient.doses.each do |dose| %>
+  <%= dose.description %>
+  <% end %>
+<% end %>
+<%= link_to 'Back', cocktails_path %>
+
+
+<div class="container">
+<%= link_to "remove", cocktails_path, method: :delete, data: { confirm: 'delete?'}  %>
+
+  <i class="fas fa-skull-crossbones">click</i>
+
+</div>
+
+
+
+
