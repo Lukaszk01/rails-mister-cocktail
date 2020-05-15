@@ -1,7 +1,22 @@
 <h1>Cocktail list</h1>
- <% @cocktails.each do |cocktail| %>
- <li><%= cocktail.name %></li>
-<li class="list-group-item list-group-item-primary"><%= render 'drink', cocktail: cocktail %></li>
-<% end %>
-<%= link_to 'create cocktail', new_cocktail_path %>
+
+
+<div class="navbar-minimalist">
+      <img src="">
+    </div>
+    <div class="main-container">
+    <div class="cards md-3">
+      <% @cocktails.each do |cocktail| %>
+      <div class="card">
+      <%= cocktail.name %>
+      <div class="card-tags">
+      <%= render 'drink', cocktail: cocktail %>
+      </div>
+      <% end %>
+    </div>
+    </div>
+</div>
+<div class="btn btn-light">
+  <%= link_to 'create cocktail', new_cocktail_path  %>
+</div>
 
