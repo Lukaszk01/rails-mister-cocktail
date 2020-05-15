@@ -1,6 +1,5 @@
 <h1>Cocktail list</h1>
 
-
 <div class="navbar-minimalist">
       <img src="">
     </div>
@@ -16,7 +15,24 @@
     </div>
     </div>
 </div>
+<%= cl_image_tag("1b57e5fb4c67161522b5c95b32bb2fbd_jllc6v",
+      width: 1350, height: 300, crop: :fill) %>
+
 <div class="btn btn-light">
-  <%= link_to 'create cocktail', new_cocktail_path  %>
+  <%= link_to 'create cocktail', new_cocktail_path %>
 </div>
 
+<table class="table">
+  <caption>List of Cocktails</caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Link</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+    </tr>
