@@ -3,7 +3,9 @@
 <div class="container bg-warning">
   <h1><%= @cocktail.name %></h1>
   <div class="image">
+    <% if @cocktail.photo.attached? %>
       <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
   </div>
   <%= link_to "Back to all cocktails", root_path %>
     <div class="col-sm-12 col-md-6">
@@ -25,12 +27,15 @@
                 <% end %>
               </td>
             </tr>
-          <% end %>
+          <% end %><%= cl_image_tag("949184054-Moe_ufmmu6",
+      width: 600, height: 300, crop: :fill) %>
         </tbody>
       </table>
     </div>
     <div class="col-sm-12 col-md-6">
       <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
     </div>
+
   </div>
 </div>
+
