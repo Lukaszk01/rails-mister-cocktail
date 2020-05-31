@@ -12,6 +12,41 @@
   </head>
 
   <body>
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "cocktails_path", class: "navbar-brand" do %>
+    <%= image_tag "https://www.google.com/url?sa=i&url=https%3A%2F%2Favatars.alphacoders.com%2Favatars%2Fview%2F152050&psig=AOvVaw0xzVP1yMr2wd_TWhQYOyt2&ust=1590992438762000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNj4hey63ekCFQAAAAAdAAAAABAD" %>
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Home", "#", class: "nav-link text-white" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Messages", "#", class: "nav-link text-white" %>
+      </li>
+      <li class="nav-item dropdown">
+        <%= image_tag "https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonscout.com%2Ficon%2Fhipster-glyph-avatar-1823891&psig=AOvVaw0uwOW40_gDugbdK8tgNnWV&ust=1590992349503000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiwksa63ekCFQAAAAAdAAAAABAD", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "Action", "#", class: "dropdown-item" %>
+          <%= link_to "Another action", "#", class: "dropdown-item" %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.discoverlosangeles.com/sites/default/files/styles/hero/public/images/2019-12/Death%20%26%20Co%20DTLA%20Main%20Bar.jpg?itok=kk9P363v);">
+  <div class="container">
+    <h1>lorem <strong>cooler text</strong> to <strong>cool ext </strong>!</h1>
+    <p>cool text.</p>
+    <a class="btn btn-flat" href="#"> <%= link_to 'create cocktail/drink', new_cocktail_path %></%></a>
+  </div>
+</div>
     <%= yield %>
   </body>
 </html>
