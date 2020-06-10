@@ -14,3 +14,11 @@
   color: gray;
   text-decoration: none;
 }
+.image, .button {
+  border: solid #141518 0.5px;
+  width: 200px;
+  text-decoration: none;
+  padding: 10px;
+  box-shadow: 0.5px 0.5px 0.5px gray;
+  border-radius: 5px;
+}
