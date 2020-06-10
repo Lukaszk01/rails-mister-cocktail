@@ -12,6 +12,8 @@
   </head>
 
   <body>
+    <%= render 'shared/navbar' %>
+    <%= render 'shared/flashes' %>
     <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to "cocktails_path", class: "navbar-brand" do %>
     <%= image_tag "" %>
@@ -47,6 +49,8 @@
 
   </div>
 </div>
+ <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
