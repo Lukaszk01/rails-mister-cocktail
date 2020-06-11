@@ -1,0 +1,32 @@
+.sign-up a {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+.sign-up a:hover {
+  text-decoration: none;
+  color: gray;
+}
+.form-actions {
+  border: solid 0.5px gray;
+  width: 80px;
+  padding: -5px;
+  border-radius: 15px;
+
+}
+.form-actions:hover {
+  background-color: #191919;
+  color: white;
+}
+.form-actions input:hover {
+  color: white;
+}
+
+.form-control, .string, .email, .optional {
+  border-radius: 10px;
+
+}
+.form-control, .password, .optional {
+  border-radius: 10px;
+}
