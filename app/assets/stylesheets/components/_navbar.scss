@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: #141518;
+  background: #33180C;
   color: white;
 }
 
@@ -16,4 +16,14 @@
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: gray;
+}
+.login, .dropdown-menu, .dropdown-menu-right, .show {
+  text-align: center;
+  border-radius: 5px;
+}
+.login, .dropdown-menu, .dropdown-menu-right, .show a:hover {
+  color: gray;
+}
+.nav-item, .dropdown, .avatar, .dropdown-toggle:hover {
+  cursor: grab;
 }
