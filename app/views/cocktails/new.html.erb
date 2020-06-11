@@ -1,10 +1,8 @@
 <div class="text-center mt-3">
   <h1>Create cocktail</h1>
 </div>
-
-<%= render 'form', Cocktail: @cocktail %>
-<!-- in the form partial. we can refer to @cocktail as, cocktail -->
-<div class="btn btn-warning">
-<%= link_to 'Back', cocktails_path %>
+  <%= render 'form', Cocktail: @cocktail %>
+<div class="button-back ml-3">
+  <%= link_to 'Back', cocktails_path %>
 </div>
 

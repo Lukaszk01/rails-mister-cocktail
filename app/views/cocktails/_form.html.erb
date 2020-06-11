@@ -3,14 +3,12 @@
     <div class="col-12 col-md-8 mt-5">
       <%= simple_form_for(@cocktail) do |f| %>
       <%= f.input :name %>
-      <%= f.input :photo, as: :file %>
-      <%= f.button :submit  %>
-        <div class="form-actions btn btn-primary">
+      <%= f.input :photo, as: :file, label: ('Upload cocktail photo').html_safe %>
+      <div class="button-submit">
         <%= f.button :submit %>
-          </div>
+      </div>
+
       <% end %>
-        <%#= cl_image_tag("",
-            width: 1368, height: 400, crop: :fill) %>
     </div>
   </div>
 </div>
