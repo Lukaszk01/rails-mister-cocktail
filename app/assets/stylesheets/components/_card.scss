@@ -1,22 +1,21 @@
 .card {
   background-size: cover;
   background-position: center;
-  height: 150px;
+
   border-radius: 1px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 22px;
-  color: white;
+  color: #33180C;
   font-weight: bolder;
   text-shadow: 1 1 2px rgba(0,0,0,0.7);
 }
-// .cards {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr;
-//   grid-gap: 16px;
-//   padding: 15px;
-//   flex-grow: 1;
-//   height: 200px;
-// }
+.card a {
+  color: #33180C;
+}
+.card a:hover {
+  color: purple;
+  text-decoration: none;
+}

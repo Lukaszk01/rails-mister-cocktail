@@ -1,12 +1,16 @@
 <div class="row justify-content-between mt-3 mb-3 ml-3 mr-3">
   <% @cocktails.each do |cocktail| %>
-<div class="card text-warning col-3">
+<div class="card col-3 mt-3 mb-3">
   <%= cocktail.name %>
     <%= render 'drink', cocktail: cocktail %>
+      <div class="drink-card-img mt-3 mb-3">
+  <% if cocktail.photo.attached? %>
+    <%= cl_image_tag cocktail.photo.key, height: 300, width: 300, crop: :fill %>
+  <% end %>
 </div>
+</div>
+
     <% end %>
 </div>
-
-
 
 

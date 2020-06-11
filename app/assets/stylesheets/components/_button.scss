@@ -15,9 +15,9 @@
   color: gray;
   text-decoration: none;
 }
-.image, .button {
+.button {
   border: solid #141518 0.5px;
-  width: 200px;
+  width: 175px;
   text-decoration: none;
   padding: 10px;
   box-shadow: 0.5px 0.5px 0.5px gray;
@@ -26,4 +26,43 @@
 .log-out a {
   color: black;
 
+}
+.button a {
+  text-align: center;
+  color: #33180C;
+  text-decoration: none;
+
+}
+.button a:hover {
+  color: purple;
+}
+.button-submit {
+  border: solid 0.1px black;
+  width: 145px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+}
+
+
+.button-back {
+  border: solid 0.1px black;
+  width: 90px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 5px;
+  text-align: center;
+}
+.button-back a {
+  text-decoration: none;
+  color: black;
+}
+
+.button-back a:hover {
+  color: white;
+}
+.button-back:hover {
+  background-color: black;
 }
