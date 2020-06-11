@@ -44,9 +44,8 @@
   margin-top: 15px;
 
 }
-.button-submit:hover {
-  background-color: #33180c;
-}
+
+
 .button-back {
   border: solid 0.1px black;
   width: 90px;
@@ -60,9 +59,10 @@
   text-decoration: none;
   color: black;
 }
-.button-back:hover {
-  background-color: #33180c;
-}
+
 .button-back a:hover {
-  color: black;
+  color: white;
+}
+.button-back:hover {
+  background-color: black;
 }
