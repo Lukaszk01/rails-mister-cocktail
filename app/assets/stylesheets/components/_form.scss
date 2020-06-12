@@ -30,3 +30,9 @@
 .form-control, .password, .optional {
   border-radius: 10px;
 }
+.form-control, .password, .optional, input {
+  border-radius: 0px;
+}
+.form-control, .string, .required {
+border-radius: 10px;
+}
