@@ -8,6 +8,9 @@
   <% if cocktail.photo.attached? %>
     <a href=" <%= cocktail_url(cocktail) %> "><%= cl_image_tag cocktail.photo.key, height: 300, width: 300, crop: :fill %></a>
   <% end %>
+   <div class="overlay">
+    <div class="text">Click to read more!</div>
+  </div>
 </div>
 </div>
 
