@@ -1,7 +1,6 @@
 .card {
   background-size: cover;
   background-position: center;
-
   border-radius: 1px;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
   display: flex;
@@ -12,6 +11,7 @@
   font-weight: bolder;
   text-shadow: 1 1 2px rgba(0,0,0,0.7);
 }
+
 .card a {
   color: #33180C;
 }
@@ -36,7 +36,7 @@
   opacity: 0.5;
 }
 
-.text {
+.text-hover {
   color: white;
   font-size: 20px;
   position: absolute;
