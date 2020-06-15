@@ -37,6 +37,7 @@
 
     <div class="col-sm-12 col-md-6 mt-3 mb-3">
       <h3>Recipe</h3>
+
       <table class="table table-bordered mt-3 mb-3">
         <tbody>
           <thead>
@@ -44,7 +45,7 @@
             <th>Description</th>
             <th>Action</th>
           </thead>
-          <% @cocktail.doses.each do |dose| %>
+            <% @cocktail.doses.each do |dose| %>
             <tr>
               <td><%= dose.ingredient.name %></td>
               <td><%= dose.description %></td>
@@ -54,10 +55,12 @@
                 <% end %>
               </td>
             </tr>
+          <% end %>
         </tbody>
       </table>
+
     </div>
-<% end %>
+
      <div class="button">
     <%= link_to "Back to all cocktails", root_path %>
   </div>
